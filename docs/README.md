@@ -66,8 +66,8 @@ This project reinforced my understanding of:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourtwitterhandle](https://www.twitter.com/yourtwitterhandle)
+- Frontend Mentor - [@amallal2004](https://www.frontendmentor.io/profile/amallal2004)
+- Twitter - [@amallal2004](https://www.twitter.com/amallal2004)
 
 ---
 
