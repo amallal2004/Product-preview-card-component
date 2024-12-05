@@ -1,3 +1,20 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+
+    --px10: 0.625rem;
+    --px12: 0.75rem;
+    --px14: 0.875rem;
+    --px16: 1rem;
+    --px24: 1.5rem;
+    --px30: 1.875rem;
+    --px343: 21.4375rem;
+    --px611: 38.1875rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +22,9 @@
 }
 
 body {
-    font-size: 12px;
+    font-size: var(--px12);
     font-family: 'Montserrat', sans-serif;
-    background-color: hsl(30, 38%, 92%);
+    background-color: var(--cream);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,17 +34,26 @@ body {
 .container {
     display: grid;
     grid-template-rows: auto 1fr;
-    width: 343px;
-    height: 611px;
-    margin-top: 30px;
-    padding: 24px;
-    border-radius: 10px;
-    background-color: hsl(0, 0%, 100%);
+    width: var(--px343);
+    height: var(--px611);
+    margin-top: var(--px30);
+    padding: var(--px24);
+    border-radius: var(--px10);
+    background-color: var(--white);
 }
 
 .container__image {
     width: 100%;
-    border-radius: 10px 10px 0 0;    
+    border-radius: var(--px10) var(--px10) 0 0;    
     padding: 0;
-    margin-bottom: 24px;
+    margin-bottom: var(--px24);
+}
+
+.container__details__logo-title {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--px12);
+    letter-spacing: 0.42em;
+    font-weight: 400;
+    margin-bottom: var(--px16);
 }
