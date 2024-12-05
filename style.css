@@ -5,10 +5,12 @@
     --dark-grayish-blue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
 
+    --px5: 0.313rem;
     --px10: 0.625rem;
     --px12: 0.75rem;
     --px14: 0.875rem;
     --px16: 1rem;
+    --px18: 1.125rem;
     --px24: 1.5rem;
     --px30: 1.875rem;
     --px343: 21.4375rem;
@@ -33,13 +35,16 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: 1fr auto;
     width: var(--px343);
-    height: var(--px611);
     margin-top: var(--px30);
-    padding: var(--px24);
     border-radius: var(--px10);
     background-color: var(--white);
+    overflow: hidden;
+}
+
+.container__details {
+    padding: 0 var(--px24) var(--px24) var(--px24);
 }
 
 .container__image {
@@ -56,4 +61,68 @@ body {
     letter-spacing: 0.42em;
     font-weight: 400;
     margin-bottom: var(--px16);
+    color: var(--dark-grayish-blue);
+}
+
+.container__details__title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: var(--px30);
+    margin-bottom: var(--px24);
+}
+
+.container__details__description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: var(--px12);
+    color: var(--dark-grayish-blue);
+    margin-bottom: var(--px24);
+    line-height: 1.50rem;
+    letter-spacing: 0.08rem;
+}
+
+.container__details__price-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: var(--px24);
+    gap: var(--px24);
+}
+
+.container__details__price-section__amound {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: var(--px30);
+    color: var(--dark-cyan);
+    margin-right: var(--px18);
+}
+
+.container__details__price-section__discound {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: var(--px12);
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+
+}
+
+.container__details__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    border-radius: var(--px5);
+    padding: var(--px16);
+    cursor: pointer;
+    font-size: var(--px12);
+    color: var(--white);
+    gap: var(--px10);
+    font-weight: 700;
+    line-height: 1.70em;
+    letter-spacing: 0.10em;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.container__details__btn:hover {
+    background-color: var(--very-dark-blue);
 }
