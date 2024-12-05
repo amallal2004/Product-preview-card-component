@@ -4,7 +4,7 @@
     --very-dark-blue: hsl(212, 21%, 14%);
     --dark-grayish-blue: hsl(228, 12%, 48%);
     --white: hsl(0, 0%, 100%);
-
+    
     --px5: 0.313rem;
     --px10: 0.625rem;
     --px12: 0.75rem;
@@ -14,7 +14,8 @@
     --px24: 1.5rem;
     --px30: 1.875rem;
     --px343: 21.4375rem;
-    --px611: 38.1875rem;
+    --px35: 2.1875rem;
+    --px542: 33.875rem;
 }
 
 * {
@@ -44,14 +45,19 @@ body {
 }
 
 .container__details {
-    padding: 0 var(--px24) var(--px24) var(--px24);
+    padding: var(--px24);
+    display: flex;
+    flex-direction: column;
 }
 
 .container__image {
     width: 100%;
-    border-radius: var(--px10) var(--px10) 0 0;    
-    padding: 0;
-    margin-bottom: var(--px24);
+    height: 240px;
+    background-image: url("../assets/images/image-product-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: var(--px10) var(--px10) 0 0;
 }
 
 .container__details__logo-title {
@@ -60,13 +66,14 @@ body {
     font-size: var(--px12);
     letter-spacing: 0.42em;
     font-weight: 400;
-    margin-bottom: var(--px16);
     color: var(--dark-grayish-blue);
+    margin-bottom: var(--px16);
 }
 
 .container__details__title {
     font-family: 'Fraunces', serif;
     font-weight: 700;
+    line-height: 1.01em;
     font-size: var(--px30);
     margin-bottom: var(--px24);
 }
@@ -76,17 +83,17 @@ body {
     font-weight: 500;
     font-size: var(--px12);
     color: var(--dark-grayish-blue);
-    margin-bottom: var(--px24);
-    line-height: 1.50rem;
-    letter-spacing: 0.08rem;
+    line-height: 1.85em;
+    letter-spacing: 0.08em;
+    margin-bottom: var(--px35);
 }
 
 .container__details__price-section {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: var(--px24);
     gap: var(--px24);
+    margin-bottom: var(--px24);
 }
 
 .container__details__price-section__amound {

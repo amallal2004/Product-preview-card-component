@@ -1,0 +1,30 @@
+@media screen and (min-width: 641px) {
+    .container {
+        width: var(--px542);
+        height: 450px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "image details";
+    }
+
+    .container__image {
+        grid-area: image;
+        height: 100%;
+        background-image: url("../assets/images/image-product-desktop.jpg");
+        background-size: cover;
+        background-position: left center;
+        border-radius: var(--px10) 0 0 var(--px10);
+    }
+    
+    .container__details {
+        grid-area: details;
+        padding: var(--px30);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .container__details__btn {
+        grid-area: btn;
+    }
+}
